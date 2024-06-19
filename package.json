@@ -1,16 +1,16 @@
 {
-  "name": "forge-std",
-  "version": "1.8.2",
-  "description": "Forge Standard Library is a collection of helpful contracts and libraries for use with Forge and Foundry.",
+  "name": "seismic-forge-std",
+  "version": "0.0.1",
+  "description": "Seismic Forge Standard Library is a fork of the Forge Standard Library, which is a collection of helpful contracts and libraries for use with Forge and Foundry.",
   "homepage": "https://book.getfoundry.sh/forge/forge-std",
   "bugs": "https://github.com/foundry-rs/forge-std/issues",
   "license": "(Apache-2.0 OR MIT)",
-  "author": "Contributors to Forge Standard Library",
+  "author": "Contributors to Forge Standard Library & Seismic Systems",
   "files": [
     "src/**/*"
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/foundry-rs/forge-std.git"
+    "url": "https://github.com/SeismicSystems/seismic-forge-std.git"
   }
 }

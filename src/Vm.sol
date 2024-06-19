@@ -1470,6 +1470,45 @@ interface VmSafe {
 
     /// Encodes a `string` value to a base64 string.
     function toBase64(string calldata data) external pure returns (string memory);
+
+    /// Retrieve the preimage of a commitment to a boolean
+    function unwrapSbool(address contractAddress, uint256 commitment) external returns (bool);
+
+    /// Retrieve the preimage of a commitment to a uint8
+    function unwrapSuint8(address contractAddress, uint256 commitment) external returns (uint256);
+
+    /// Retrieve the preimage of a commitment to a uint16
+    function unwrapSuint16(address contractAddress, uint256 commitment) external returns (uint256);
+
+    /// Retrieve the preimage of a commitment to a uint32
+    function unwrapSuint32(address contractAddress, uint256 commitment) external returns (uint256);
+
+    /// Retrieve the preimage of a commitment to a uint64
+    function unwrapSuint64(address contractAddress, uint256 commitment) external returns (uint256);
+
+    /// Retrieve the preimage of a commitment to a uint128
+    function unwrapSuint128(address contractAddress, uint256 commitment) external returns (uint256);
+
+    /// Retrieve the preimage of a commitment to a uint256
+    function unwrapSuint256(address contractAddress, uint256 commitment) external returns (uint256);
+
+    /// Retrieve the preimage of a commitment to an int8
+    function unwrapSint8(address contractAddress, uint256 commitment) external returns (int8);
+
+    /// Retrieve the preimage of a commitment to an int16
+    function unwrapSint16(address contractAddress, uint256 commitment) external returns (int16);
+
+    /// Retrieve the preimage of a commitment to an int32
+    function unwrapSint32(address contractAddress, uint256 commitment) external returns (int32);
+
+    /// Retrieve the preimage of a commitment to an int64
+    function unwrapSint64(address contractAddress, uint256 commitment) external returns (int64);
+
+    /// Retrieve the preimage of a commitment to an int128
+    function unwrapSint128(address contractAddress, uint256 commitment) external returns (int128);
+
+    /// Retrieve the preimage of a commitment to an int256
+    function unwrapSint256(address contractAddress, uint256 commitment) external returns (int256);
 }
 
 /// The `Vm` interface does allow manipulation of the EVM state. These are all intended to be used
@@ -1751,4 +1790,43 @@ interface Vm is VmSafe {
 
     /// Stops all safe memory expectation in the current subcontext.
     function stopExpectSafeMemory() external;
+
+    /// Store a Seismic secret boolean value
+    function commitBool(address contractAddress, bool value) external returns (uint256);
+    
+    /// Store a Seismic secret uint8 value
+    function commitUint8(address contractAddress, uint8 value) external returns (uint256);
+
+    /// Store a Seismic secret uint16 value
+    function commitUint16(address contractAddress, uint16 value) external returns (uint256);
+
+    /// Store a Seismic secret uint32 value
+    function commitUint32(address contractAddress, uint32 value) external returns (uint256);
+
+    /// Store a Seismic secret uint64 value
+    function commitUint64(address contractAddress, uint64 value) external returns (uint256);
+
+    /// Store a Seismic secret uint128 value
+    function commitUint128(address contractAddress, uint128 value) external returns (uint256);
+
+    /// Store a Seismic secret uint256 value
+    function commitUint256(address contractAddress, uint256 value) external returns (uint256);
+
+    /// Store a Seismic secret int8 value
+    function commitInt8(address contractAddress, int8 value) external returns (uint256);
+
+    /// Store a Seismic secret int16 value
+    function commitInt16(address contractAddress, int16 value) external returns (uint256);
+
+    /// Store a Seismic secret int32 value
+    function commitInt32(address contractAddress, int32 value) external returns (uint256);
+
+    /// Store a Seismic secret int64 value
+    function commitInt64(address contractAddress, int64 value) external returns (uint256);
+
+    /// Store a Seismic secret int128 value
+    function commitInt128(address contractAddress, int128 value) external returns (uint256);
+
+    /// Store a Seismic secret int256 value
+    function commitInt256(address contractAddress, int256 value) external returns (uint256);
 }
