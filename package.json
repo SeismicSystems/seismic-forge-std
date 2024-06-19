@@ -5,7 +5,7 @@
   "homepage": "https://book.getfoundry.sh/forge/forge-std",
   "bugs": "https://github.com/foundry-rs/forge-std/issues",
   "license": "(Apache-2.0 OR MIT)",
-  "author": "Contributors to Forge Standard Library",
+  "author": "Contributors to Forge Standard Library & Seismic Systems",
   "files": [
     "src/**/*"
   ],
