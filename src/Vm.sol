@@ -1492,6 +1492,9 @@ interface VmSafe {
     /// Retrieve the preimage of a commitment to a uint256
     function unwrapSuint256(address contractAddress, uint256 commitment) external returns (uint256);
 
+    /// Retrieve the preimage of a commitment to a uint
+    function unwrapSuint(address contractAddress, uint256 commitment) external returns (uint);
+
     /// Retrieve the preimage of a commitment to an int8
     function unwrapSint8(address contractAddress, uint256 commitment) external returns (int8);
 
@@ -1509,6 +1512,9 @@ interface VmSafe {
 
     /// Retrieve the preimage of a commitment to an int256
     function unwrapSint256(address contractAddress, uint256 commitment) external returns (int256);
+
+    /// Retrieve the preimage of a commitment to an int
+    function unwrapSint(address contractAddress, uint256 commitment) external returns (int);
 }
 
 /// The `Vm` interface does allow manipulation of the EVM state. These are all intended to be used
@@ -1812,6 +1818,9 @@ interface Vm is VmSafe {
     /// Store a Seismic secret uint256 value
     function commitUint256(address contractAddress, uint256 value) external returns (uint256);
 
+    /// Store a Seismic secret uint value
+    function commitUint(address contractAddress, uint value) external returns (uint256);
+
     /// Store a Seismic secret int8 value
     function commitInt8(address contractAddress, int8 value) external returns (uint256);
 
@@ -1829,4 +1838,7 @@ interface Vm is VmSafe {
 
     /// Store a Seismic secret int256 value
     function commitInt256(address contractAddress, int256 value) external returns (uint256);
+
+    /// Store a Seismic secret int value
+    function commitInt(address contractAddress, int value) external returns (uint256);
 }
