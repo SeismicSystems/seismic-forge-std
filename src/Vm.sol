@@ -1474,6 +1474,9 @@ interface VmSafe {
     /// Retrieve the preimage of a commitment to a boolean
     function unwrapSbool(address contractAddress, uint256 commitment) external returns (bool);
 
+    /// Retrieve the preimage of a commitment to an address
+    function unwrapSaddress(address contractAddress, uint256 commitment) external returns (address);
+
     /// Retrieve the preimage of a commitment to a uint8
     function unwrapSuint8(address contractAddress, uint256 commitment) external returns (uint256);
 
@@ -1799,7 +1802,10 @@ interface Vm is VmSafe {
 
     /// Store a Seismic secret boolean value
     function commitBool(address contractAddress, bool value) external returns (uint256);
-    
+
+    /// Store a Seismic secret address value
+    function commitAddress(address contractAddress, address value) external returns (uint256);
+
     /// Store a Seismic secret uint8 value
     function commitUint8(address contractAddress, uint8 value) external returns (uint256);
 
