@@ -1478,19 +1478,19 @@ interface VmSafe {
     function revealSaddress(address contractAddress, uint256 commitment) external returns (address);
 
     /// Retrieve the preimage of a commitment to a uint8
-    function revealSuint8(address contractAddress, uint256 commitment) external returns (uint256);
+    function revealSuint8(address contractAddress, uint256 commitment) external returns (uint8);
 
     /// Retrieve the preimage of a commitment to a uint16
-    function revealSuint16(address contractAddress, uint256 commitment) external returns (uint256);
+    function revealSuint16(address contractAddress, uint256 commitment) external returns (uint16);
 
     /// Retrieve the preimage of a commitment to a uint32
-    function revealSuint32(address contractAddress, uint256 commitment) external returns (uint256);
+    function revealSuint32(address contractAddress, uint256 commitment) external returns (uint32);
 
     /// Retrieve the preimage of a commitment to a uint64
-    function revealSuint64(address contractAddress, uint256 commitment) external returns (uint256);
+    function revealSuint64(address contractAddress, uint256 commitment) external returns (uint64);
 
     /// Retrieve the preimage of a commitment to a uint128
-    function revealSuint128(address contractAddress, uint256 commitment) external returns (uint256);
+    function revealSuint128(address contractAddress, uint256 commitment) external returns (uint128);
 
     /// Retrieve the preimage of a commitment to a uint256
     function revealSuint256(address contractAddress, uint256 commitment) external returns (uint256);
