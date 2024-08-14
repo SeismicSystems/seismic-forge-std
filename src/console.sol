@@ -25,6 +25,14 @@ library console {
     function logUint(uint p0) internal view {
         _sendLogPayload(abi.encodeWithSignature("log(uint)", p0));
     }
+    
+    function logSint(sint p0) internal view {
+        _sendLogPayload(abi.encodeWithSignature("log(sint)", p0));
+    }
+
+    function logSuint(suint p0) internal view {
+        _sendLogPayload(abi.encodeWithSignature("log(suint)", p0));
+    }
 
     function logString(string memory p0) internal view {
         _sendLogPayload(abi.encodeWithSignature("log(string)", p0));
@@ -172,6 +180,10 @@ library console {
 
     function log(uint p0) internal view {
         _sendLogPayload(abi.encodeWithSignature("log(uint)", p0));
+    }
+
+    function log(suint p0) internal view {
+        _sendLogPayload(abi.encodeWithSignature("log(suint)", p0));
     }
 
     function log(string memory p0) internal view {
