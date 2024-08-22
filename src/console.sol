@@ -26,6 +26,18 @@ library console {
         _sendLogPayload(abi.encodeWithSignature("log(uint)", p0));
     }
 
+    // function logCommitment(saddress p0) internal view {
+    //     _sendLogPayload(abi.encodeWithSignature("log(saddress)", p0));
+    // }
+
+    function logCommitment(sint p0) internal view {
+        _sendLogPayload(abi.encodeWithSignature("log(sint256)", p0));
+    }
+
+    function logCommitment(suint p0) internal view {
+        _sendLogPayload(abi.encodeWithSignature("log(suint256)", p0));
+    }
+
     function logString(string memory p0) internal view {
         _sendLogPayload(abi.encodeWithSignature("log(string)", p0));
     }
