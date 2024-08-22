@@ -43,16 +43,16 @@ library console2 {
         _sendLogPayload(abi.encodeWithSignature("log(uint256)", p0));
     }
 
-    function logCommitment(saddress p0) internal pure {
-        _sendLogPayload(abi.encodeWithSignature("log(saddress)", p0));
+    // function logCommitment(saddress p0) internal pure {
+    //     _sendLogPayload(abi.encodeWithSignature("log(saddress)", p0));
+    // }
+
+    function logCommitment(sint p0) internal pure {
+        _sendLogPayload(abi.encodeWithSignature("log(sint)", p0));
     }
 
-    function logCommitment(sint256 p0) internal pure {
-        _sendLogPayload(abi.encodeWithSignature("log(sint256)", p0));
-    }
-
-    function logCommitment(suint256 p0) internal pure {
-        _sendLogPayload(abi.encodeWithSignature("log(suint256)", p0));
+    function logCommitment(suint p0) internal pure {
+        _sendLogPayload(abi.encodeWithSignature("log(suint)", p0));
     }
 
     function logString(string memory p0) internal pure {

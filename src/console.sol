@@ -34,11 +34,11 @@ library console {
         _sendLogPayload(abi.encodeWithSignature("log(uint)", p0));
     }
 
-    function logCommitment(saddress p0) internal view {
-        _sendLogPayload(abi.encodeWithSignature("log(saddress)", p0));
-    }
+    // function logCommitment(saddress p0) internal view {
+    //     _sendLogPayload(abi.encodeWithSignature("log(saddress)", p0));
+    // }
 
-    function logCommitment(sint256 p0) internal view {
+    function logCommitment(sint p0) internal view {
         _sendLogPayload(abi.encodeWithSignature("log(sint256)", p0));
     }
 
