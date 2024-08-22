@@ -42,7 +42,7 @@ library console {
         _sendLogPayload(abi.encodeWithSignature("log(sint256)", p0));
     }
 
-    function logCommitment(suint256 p0) internal view {
+    function logCommitment(suint p0) internal view {
         _sendLogPayload(abi.encodeWithSignature("log(suint256)", p0));
     }
 
