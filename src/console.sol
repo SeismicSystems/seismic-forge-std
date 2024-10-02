@@ -27,11 +27,11 @@ library console {
     }
 
     function logSuint(suint p0) internal view {
-        _sendLogPayload(abi.encodeWithSignature("log(suint)", p0));
+        _sendLogPayload(abi.encodeWithSignature("log(suint256)", p0));
     }
 
     function logSint(sint p0) internal view {
-        _sendLogPayload(abi.encodeWithSignature("log(sint)", p0));
+        _sendLogPayload(abi.encodeWithSignature("log(sint256)", p0));
     }
 
     // function logSaddress(saddress p0) internal view {
