@@ -1019,20 +1019,41 @@ interface VmSafe {
     /// Asserts that two arrays of `uint256` values are equal and includes error message into revert string on failure.
     function assertEq(uint256[] calldata left, uint256[] calldata right, string calldata error) external pure;
 
+    // /// Asserts that two arrays of `suint256 values are equal.
+    // function assertEq(suint256[] calldata left, suint256[] calldata right) external pure;
+
+    // /// Asserts that two arrays of `suint256` values are equal and includes error message into revert string on failure.
+    // function assertEq(suint256[] calldata left, suint256[] calldata right, string calldata error) external pure;
+
     /// Asserts that two arrays of `int256` values are equal.
     function assertEq(int256[] calldata left, int256[] calldata right) external pure;
 
     /// Asserts that two arrays of `int256` values are equal and includes error message into revert string on failure.
     function assertEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
 
+    // /// Asserts that two arrays of `sint256` values are equal.
+    // function assertEq(sint256[] calldata left, sint256[] calldata right) external pure;
+
+    // /// Asserts that two arrays of `sint256` values are equal and includes error message into revert string on failure.
+    // function assertEq(sint256[] calldata left, sint256[] calldata right, string calldata error) external pure;
+
     /// Asserts that two `uint256` values are equal.
     function assertEq(uint256 left, uint256 right) external pure;
+
+    // /// Asserts that two `suint256` values are equal.
+    // function assertEq(suint256 left, suint256 right) external pure;
 
     /// Asserts that two arrays of `address` values are equal.
     function assertEq(address[] calldata left, address[] calldata right) external pure;
 
     /// Asserts that two arrays of `address` values are equal and includes error message into revert string on failure.
     function assertEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
+
+    // /// Asserts that two arrays of `saddress` values are equal.
+    // function assertEq(saddress[] calldata left, saddress[] calldata right) external pure;
+
+    // /// Asserts that two arrays of `saddress` values are equal and includes error message into revert string on failure.
+    // function assertEq(saddress[] calldata left, saddress[] calldata right, string calldata error) external pure;
 
     /// Asserts that two arrays of `bytes32` values are equal.
     function assertEq(bytes32[] calldata left, bytes32[] calldata right) external pure;
@@ -1055,17 +1076,32 @@ interface VmSafe {
     /// Asserts that two `uint256` values are equal and includes error message into revert string on failure.
     function assertEq(uint256 left, uint256 right, string calldata error) external pure;
 
+    // /// Asserts that two `suint256` values are equal and includes error message into revert string on failure.
+    // function assertEq(suint256 left, suint256 right, string calldata error) external pure;
+
     /// Asserts that two `int256` values are equal.
     function assertEq(int256 left, int256 right) external pure;
 
     /// Asserts that two `int256` values are equal and includes error message into revert string on failure.
     function assertEq(int256 left, int256 right, string calldata error) external pure;
 
+    // /// Asserts that two `sint256` values are equal.
+    // function assertEq(sint256 left, sint256 right) external pure;
+
+    // /// Asserts that two `sint256` values are equal and includes error message into revert string on failure.
+    // function assertEq(sint256 left, sint256 right, string calldata error) external pure;
+
     /// Asserts that two `address` values are equal.
     function assertEq(address left, address right) external pure;
 
     /// Asserts that two `address` values are equal and includes error message into revert string on failure.
     function assertEq(address left, address right, string calldata error) external pure;
+
+    // /// Asserts that two `saddress` values are equal.
+    // function assertEq(saddress left, saddress right) external pure;
+
+    // /// Asserts that two `saddress` values are equal and includes error message into revert string on failure.
+    // function assertEq(saddress left, saddress right, string calldata error) external pure;
 
     /// Asserts that two `bytes32` values are equal.
     function assertEq(bytes32 left, bytes32 right) external pure;
@@ -1095,6 +1131,22 @@ interface VmSafe {
     /// Formats values with decimals in failure message. Includes error message into revert string on failure.
     function assertGeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
 
+    // /// Compares two `suint256` values. Expects first value to be greater than or equal to second.
+    // /// Formats values with decimals in failure message.
+    // function assertGeDecimal(suint256 left, suint256 right, uint256 decimals) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be greater than or equal to second.
+    // /// Formats values with decimals in failure message. Includes error message into revert string on failure.
+    // function assertGeDecimal(suint256 left, suint256 right, uint256 decimals, string calldata error) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be greater than or equal to second.
+    // /// Formats values with decimals in failure message.
+    // function assertGeDecimal(sint256 left, sint256 right, uint256 decimals) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be greater than or equal to second.
+    // /// Formats values with decimals in failure message. Includes error message into revert string on failure.
+    // function assertGeDecimal(sint256 left, sint256 right, uint256 decimals, string calldata error) external pure;
+
     /// Compares two `uint256` values. Expects first value to be greater than or equal to second.
     function assertGe(uint256 left, uint256 right) external pure;
 
@@ -1108,6 +1160,20 @@ interface VmSafe {
     /// Compares two `int256` values. Expects first value to be greater than or equal to second.
     /// Includes error message into revert string on failure.
     function assertGe(int256 left, int256 right, string calldata error) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be greater than or equal to second.
+    // function assertGe(suint256 left, suint256 right) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be greater than or equal to second.
+    // /// Includes error message into revert string on failure.
+    // function assertGe(suint256 left, suint256 right, string calldata error) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be greater than or equal to second.
+    // function assertGe(sint256 left, sint256 right) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be greater than or equal to second.
+    // /// Includes error message into revert string on failure.
+    // function assertGe(sint256 left, sint256 right, string calldata error) external pure;
 
     /// Compares two `uint256` values. Expects first value to be greater than second.
     /// Formats values with decimals in failure message.
@@ -1125,6 +1191,22 @@ interface VmSafe {
     /// Formats values with decimals in failure message. Includes error message into revert string on failure.
     function assertGtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
 
+    // /// Compares two `suint256` values. Expects first value to be greater than second.
+    // /// Formats values with decimals in failure message.
+    // function assertGtDecimal(suint256 left, suint256 right, uint256 decimals) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be greater than second.
+    // /// Formats values with decimals in failure message. Includes error message into revert string on failure.
+    // function assertGtDecimal(suint256 left, suint256 right, uint256 decimals, string calldata error) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be greater than second.
+    // /// Formats values with decimals in failure message.
+    // function assertGtDecimal(sint256 left, sint256 right, uint256 decimals) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be greater than second.
+    // /// Formats values with decimals in failure message. Includes error message into revert string on failure.
+    // function assertGtDecimal(sint256 left, sint256 right, uint256 decimals, string calldata error) external pure;
+
     /// Compares two `uint256` values. Expects first value to be greater than second.
     function assertGt(uint256 left, uint256 right) external pure;
 
@@ -1138,6 +1220,20 @@ interface VmSafe {
     /// Compares two `int256` values. Expects first value to be greater than second.
     /// Includes error message into revert string on failure.
     function assertGt(int256 left, int256 right, string calldata error) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be greater than second.
+    // function assertGt(suint256 left, suint256 right) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be greater than second.
+    // /// Includes error message into revert string on failure.
+    // function assertGt(suint256 left, suint256 right, string calldata error) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be greater than second.
+    // function assertGt(sint256 left, sint256 right) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be greater than second.
+    // /// Includes error message into revert string on failure.
+    // function assertGt(sint256 left, sint256 right, string calldata error) external pure;
 
     /// Compares two `uint256` values. Expects first value to be less than or equal to second.
     /// Formats values with decimals in failure message.
@@ -1155,6 +1251,22 @@ interface VmSafe {
     /// Formats values with decimals in failure message. Includes error message into revert string on failure.
     function assertLeDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
 
+    // /// Compares two `suint256` values. Expects first value to be less than or equal to second.
+    // /// Formats values with decimals in failure message.
+    // function assertLeDecimal(suint256 left, suint256 right, uint256 decimals) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be less than or equal to second.
+    // /// Formats values with decimals in failure message. Includes error message into revert string on failure.
+    // function assertLeDecimal(suint256 left, suint256 right, uint256 decimals, string calldata error) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be less than or equal to second.
+    // /// Formats values with decimals in failure message.
+    // function assertLeDecimal(sint256 left, sint256 right, uint256 decimals) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be less than or equal to second.
+    // /// Formats values with decimals in failure message. Includes error message into revert string on failure.
+    // function assertLeDecimal(sint256 left, sint256 right, uint256 decimals, string calldata error) external pure;
+
     /// Compares two `uint256` values. Expects first value to be less than or equal to second.
     function assertLe(uint256 left, uint256 right) external pure;
 
@@ -1168,6 +1280,20 @@ interface VmSafe {
     /// Compares two `int256` values. Expects first value to be less than or equal to second.
     /// Includes error message into revert string on failure.
     function assertLe(int256 left, int256 right, string calldata error) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be less than or equal to second.
+    // function assertLe(suint256 left, suint256 right) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be less than or equal to second.
+    // /// Includes error message into revert string on failure.
+    // function assertLe(suint256 left, suint256 right, string calldata error) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be less than or equal to second.
+    // function assertLe(sint256 left, sint256 right) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be less than or equal to second.
+    // /// Includes error message into revert string on failure.
+    // function assertLe(sint256 left, sint256 right, string calldata error) external pure;
 
     /// Compares two `uint256` values. Expects first value to be less than second.
     /// Formats values with decimals in failure message.
@@ -1185,6 +1311,22 @@ interface VmSafe {
     /// Formats values with decimals in failure message. Includes error message into revert string on failure.
     function assertLtDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
 
+    // /// Compares two `suint256` values. Expects first value to be less than second.
+    // /// Formats values with decimals in failure message.
+    // function assertLtDecimal(suint256 left, suint256 right, uint256 decimals) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be less than second.
+    // /// Formats values with decimals in failure message. Includes error message into revert string on failure.
+    // function assertLtDecimal(suint256 left, suint256 right, uint256 decimals, string calldata error) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be less than second.
+    // /// Formats values with decimals in failure message.
+    // function assertLtDecimal(sint256 left, sint256 right, uint256 decimals) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be less than second.
+    // /// Formats values with decimals in failure message. Includes error message into revert string on failure.
+    // function assertLtDecimal(sint256 left, sint256 right, uint256 decimals, string calldata error) external pure;
+
     /// Compares two `uint256` values. Expects first value to be less than second.
     function assertLt(uint256 left, uint256 right) external pure;
 
@@ -1199,6 +1341,20 @@ interface VmSafe {
     /// Includes error message into revert string on failure.
     function assertLt(int256 left, int256 right, string calldata error) external pure;
 
+    // /// Compares two `suint256` values. Expects first value to be less than second.
+    // function assertLt(suint256 left, suint256 right) external pure;
+
+    // /// Compares two `suint256` values. Expects first value to be less than second.
+    // /// Includes error message into revert string on failure.
+    // function assertLt(suint256 left, suint256 right, string calldata error) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be less than second.
+    // function assertLt(sint256 left, sint256 right) external pure;
+
+    // /// Compares two `sint256` values. Expects first value to be less than second.
+    // /// Includes error message into revert string on failure.
+    // function assertLt(sint256 left, sint256 right, string calldata error) external pure;
+
     /// Asserts that two `uint256` values are not equal, formatting them with decimals in failure message.
     function assertNotEqDecimal(uint256 left, uint256 right, uint256 decimals) external pure;
 
@@ -1212,6 +1368,20 @@ interface VmSafe {
     /// Asserts that two `int256` values are not equal, formatting them with decimals in failure message.
     /// Includes error message into revert string on failure.
     function assertNotEqDecimal(int256 left, int256 right, uint256 decimals, string calldata error) external pure;
+
+    // /// Asserts that two `suint256` values are not equal, formatting them with decimals in failure message.
+    // function assertNotEqDecimal(suint256 left, suint256 right, uint256 decimals) external pure;
+
+    // /// Asserts that two `suint256` values are not equal, formatting them with decimals in failure message.
+    // /// Includes error message into revert string on failure.
+    // function assertNotEqDecimal(suint256 left, suint256 right, uint256 decimals, string calldata error) external pure;
+
+    // /// Asserts that two `sint256` values are not equal, formatting them with decimals in failure message.
+    // function assertNotEqDecimal(sint256 left, sint256 right, uint256 decimals) external pure;
+
+    // /// Asserts that two `sint256` values are not equal, formatting them with decimals in failure message.
+    // /// Includes error message into revert string on failure.
+    // function assertNotEqDecimal(sint256 left, sint256 right, uint256 decimals, string calldata error) external pure;
 
     /// Asserts that two `bool` values are not equal.
     function assertNotEq(bool left, bool right) external pure;
@@ -1249,6 +1419,18 @@ interface VmSafe {
     /// Asserts that two arrays of `int256` values are not equal and includes error message into revert string on failure.
     function assertNotEq(int256[] calldata left, int256[] calldata right, string calldata error) external pure;
 
+    // /// Asserts that two arrays of `suint256` values are not equal.
+    // function assertNotEq(suint256[] calldata left, suint256[] calldata right) external pure;
+
+    // /// Asserts that two arrays of `suint256` values are not equal and includes error message into revert string on failure.
+    // function assertNotEq(suint256[] calldata left, suint256[] calldata right, string calldata error) external pure;
+
+    // /// Asserts that two arrays of `sint256` values are not equal.
+    // function assertNotEq(sint256[] calldata left, sint256[] calldata right) external pure;
+
+    // /// Asserts that two arrays of `sint256` values are not equal and includes error message into revert string on failure.
+    // function assertNotEq(sint256[] calldata left, sint256[] calldata right, string calldata error) external pure;
+
     /// Asserts that two `uint256` values are not equal.
     function assertNotEq(uint256 left, uint256 right) external pure;
 
@@ -1257,6 +1439,12 @@ interface VmSafe {
 
     /// Asserts that two arrays of `address` values are not equal and includes error message into revert string on failure.
     function assertNotEq(address[] calldata left, address[] calldata right, string calldata error) external pure;
+
+    // /// Asserts that two arrays of `saddress` values are not equal.
+    // function assertNotEq(saddress[] calldata left, saddress[] calldata right) external pure;
+
+    // /// Asserts that two arrays of `saddress` values are not equal and includes error message into revert string on failure.
+    // function assertNotEq(saddress[] calldata left, saddress[] calldata right, string calldata error) external pure;
 
     /// Asserts that two arrays of `bytes32` values are not equal.
     function assertNotEq(bytes32[] calldata left, bytes32[] calldata right) external pure;
@@ -1285,11 +1473,29 @@ interface VmSafe {
     /// Asserts that two `int256` values are not equal and includes error message into revert string on failure.
     function assertNotEq(int256 left, int256 right, string calldata error) external pure;
 
+    // /// Asserts that two `suint256` values are not equal.
+    // function assertNotEq(suint256 left, suint256 right) external pure;
+
+    // /// Asserts that two `suint256` values are not equal and includes error message into revert string on failure.
+    // function assertNotEq(suint256 left, suint256 right, string calldata error) external pure;
+
+    // /// Asserts that two `sint256` values are not equal.
+    // function assertNotEq(sint256 left, sint256 right) external pure;
+
+    // /// Asserts that two `sint256` values are not equal and includes error message into revert string on failure.
+    // function assertNotEq(sint256 left, sint256 right, string calldata error) external pure;
+
     /// Asserts that two `address` values are not equal.
     function assertNotEq(address left, address right) external pure;
 
     /// Asserts that two `address` values are not equal and includes error message into revert string on failure.
     function assertNotEq(address left, address right, string calldata error) external pure;
+
+    // /// Asserts that two `saddress` values are not equal.
+    // function assertNotEq(saddress left, saddress right) external pure;
+
+    // /// Asserts that two `saddress` values are not equal and includes error message into revert string on failure.
+    // function assertNotEq(saddress left, saddress right, string calldata error) external pure;
 
     /// Asserts that two `bytes32` values are not equal.
     function assertNotEq(bytes32 left, bytes32 right) external pure;
@@ -1470,54 +1676,6 @@ interface VmSafe {
 
     /// Encodes a `string` value to a base64 string.
     function toBase64(string calldata data) external pure returns (string memory);
-
-    /// Retrieve the preimage of a commitment to a boolean
-    function revealSbool(address contractAddress, uint256 commitment) external returns (bool);
-
-    /// Retrieve the preimage of a commitment to an address
-    function revealSaddress(address contractAddress, uint256 commitment) external returns (address);
-
-    /// Retrieve the preimage of a commitment to a uint8
-    function revealSuint8(address contractAddress, uint256 commitment) external returns (uint8);
-
-    /// Retrieve the preimage of a commitment to a uint16
-    function revealSuint16(address contractAddress, uint256 commitment) external returns (uint16);
-
-    /// Retrieve the preimage of a commitment to a uint32
-    function revealSuint32(address contractAddress, uint256 commitment) external returns (uint32);
-
-    /// Retrieve the preimage of a commitment to a uint64
-    function revealSuint64(address contractAddress, uint256 commitment) external returns (uint64);
-
-    /// Retrieve the preimage of a commitment to a uint128
-    function revealSuint128(address contractAddress, uint256 commitment) external returns (uint128);
-
-    /// Retrieve the preimage of a commitment to a uint256
-    function revealSuint256(address contractAddress, uint256 commitment) external returns (uint256);
-
-    /// Retrieve the preimage of a commitment to a uint
-    function revealSuint(address contractAddress, uint256 commitment) external returns (uint);
-
-    /// Retrieve the preimage of a commitment to an int8
-    function revealSint8(address contractAddress, uint256 commitment) external returns (int8);
-
-    /// Retrieve the preimage of a commitment to an int16
-    function revealSint16(address contractAddress, uint256 commitment) external returns (int16);
-
-    /// Retrieve the preimage of a commitment to an int32
-    function revealSint32(address contractAddress, uint256 commitment) external returns (int32);
-
-    /// Retrieve the preimage of a commitment to an int64
-    function revealSint64(address contractAddress, uint256 commitment) external returns (int64);
-
-    /// Retrieve the preimage of a commitment to an int128
-    function revealSint128(address contractAddress, uint256 commitment) external returns (int128);
-
-    /// Retrieve the preimage of a commitment to an int256
-    function revealSint256(address contractAddress, uint256 commitment) external returns (int256);
-
-    /// Retrieve the preimage of a commitment to an int
-    function revealSint(address contractAddress, uint256 commitment) external returns (int);
 }
 
 /// The `Vm` interface does allow manipulation of the EVM state. These are all intended to be used
@@ -1799,52 +1957,4 @@ interface Vm is VmSafe {
 
     /// Stops all safe memory expectation in the current subcontext.
     function stopExpectSafeMemory() external;
-
-    /// Store a Seismic secret boolean value
-    function commitBool(address contractAddress, bool value) external returns (uint256);
-
-    /// Store a Seismic secret address value
-    function commitAddress(address contractAddress, address value) external returns (uint256);
-
-    /// Store a Seismic secret uint8 value
-    function commitUint8(address contractAddress, uint8 value) external returns (uint256);
-
-    /// Store a Seismic secret uint16 value
-    function commitUint16(address contractAddress, uint16 value) external returns (uint256);
-
-    /// Store a Seismic secret uint32 value
-    function commitUint32(address contractAddress, uint32 value) external returns (uint256);
-
-    /// Store a Seismic secret uint64 value
-    function commitUint64(address contractAddress, uint64 value) external returns (uint256);
-
-    /// Store a Seismic secret uint128 value
-    function commitUint128(address contractAddress, uint128 value) external returns (uint256);
-
-    /// Store a Seismic secret uint256 value
-    function commitUint256(address contractAddress, uint256 value) external returns (uint256);
-
-    /// Store a Seismic secret uint value
-    function commitUint(address contractAddress, uint value) external returns (uint256);
-
-    /// Store a Seismic secret int8 value
-    function commitInt8(address contractAddress, int8 value) external returns (uint256);
-
-    /// Store a Seismic secret int16 value
-    function commitInt16(address contractAddress, int16 value) external returns (uint256);
-
-    /// Store a Seismic secret int32 value
-    function commitInt32(address contractAddress, int32 value) external returns (uint256);
-
-    /// Store a Seismic secret int64 value
-    function commitInt64(address contractAddress, int64 value) external returns (uint256);
-
-    /// Store a Seismic secret int128 value
-    function commitInt128(address contractAddress, int128 value) external returns (uint256);
-
-    /// Store a Seismic secret int256 value
-    function commitInt256(address contractAddress, int256 value) external returns (uint256);
-
-    /// Store a Seismic secret int value
-    function commitInt(address contractAddress, int value) external returns (uint256);
 }

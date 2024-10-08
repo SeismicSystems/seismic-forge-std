@@ -88,6 +88,22 @@ abstract contract StdAssertions {
         vm.assertEqDecimal(left, right, decimals, err);
     }
 
+    // function assertEq(suint256 left, suint256 right) internal pure virtual {
+    //     vm.assertEq(left, right);
+    // }
+
+    // function assertEq(suint256 left, suint256 right, string memory err) internal pure virtual {
+    //     vm.assertEq(left, right, err);
+    // }
+
+    // function assertEqDecimal(suint256 left, suint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertEqDecimal(left, right, decimals);
+    // }
+
+    // function assertEqDecimal(suint256 left, suint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertEqDecimal(left, right, decimals, err);
+    // }
+
     function assertEq(int256 left, int256 right) internal pure virtual {
         vm.assertEq(left, right);
     }
@@ -104,6 +120,22 @@ abstract contract StdAssertions {
         vm.assertEqDecimal(left, right, decimals, err);
     }
 
+    // function assertEq(sint256 left, sint256 right) internal pure virtual {
+    //     vm.assertEq(left, right);
+    // }
+
+    // function assertEq(sint256 left, sint256 right, string memory err) internal pure virtual {
+    //     vm.assertEq(left, right, err);
+    // }
+
+    // function assertEqDecimal(sint256 left, sint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertEqDecimal(left, right, decimals);
+    // }
+
+    // function assertEqDecimal(sint256 left, sint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertEqDecimal(left, right, decimals, err);
+    // }
+
     function assertEq(address left, address right) internal pure virtual {
         vm.assertEq(left, right);
     }
@@ -111,6 +143,14 @@ abstract contract StdAssertions {
     function assertEq(address left, address right, string memory err) internal pure virtual {
         vm.assertEq(left, right, err);
     }
+
+    // function assertEq(saddress left, saddress right) internal pure virtual {
+    //     vm.assertEq(left, right);
+    // }
+
+    // function assertEq(saddress left, saddress right, string memory err) internal pure virtual {
+    //     vm.assertEq(left, right, err);
+    // }
 
     function assertEq(bytes32 left, bytes32 right) internal pure virtual {
         vm.assertEq(left, right);
@@ -175,6 +215,30 @@ abstract contract StdAssertions {
     function assertEq(address[] memory left, address[] memory right, string memory err) internal pure virtual {
         vm.assertEq(left, right, err);
     }
+
+    // function assertEq(suint256[] memory left, suint256[] memory right) internal pure virtual {
+    //     vm.assertEq(left, right);
+    // }
+
+    // function assertEq(suint256[] memory left, suint256[] memory right, string memory err) internal pure virtual {
+    //     vm.assertEq(left, right, err);
+    // }
+
+    // function assertEq(sint256[] memory left, sint256[] memory right) internal pure virtual {
+    //     vm.assertEq(left, right);
+    // }
+
+    // function assertEq(sint256[] memory left, sint256[] memory right, string memory err) internal pure virtual {
+    //     vm.assertEq(left, right, err);
+    // }
+
+    // function assertEq(saddress[] memory left, saddress[] memory right) internal pure virtual {
+    //     vm.assertEq(left, right);
+    // }
+
+    // function assertEq(saddress[] memory left, saddress[] memory right, string memory err) internal pure virtual {
+    //     vm.assertEq(left, right, err);
+    // }
 
     function assertEq(bytes32[] memory left, bytes32[] memory right) internal pure virtual {
         vm.assertEq(left, right);
@@ -256,6 +320,46 @@ abstract contract StdAssertions {
     function assertNotEq(address left, address right, string memory err) internal pure virtual {
         vm.assertNotEq(left, right, err);
     }
+
+    // function assertNotEq(suint256 left, suint256 right) internal pure virtual {
+    //     vm.assertNotEq(left, right);
+    // }
+
+    // function assertNotEq(suint256 left, suint256 right, string memory err) internal pure virtual {
+    //     vm.assertNotEq(left, right, err);
+    // }
+
+    // function assertNotEqDecimal(suint256 left, suint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertNotEqDecimal(left, right, decimals);
+    // }
+
+    // function assertNotEqDecimal(suint256 left, suint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertNotEqDecimal(left, right, decimals, err);
+    // }
+
+    // function assertNotEq(sint256 left, sint256 right) internal pure virtual {
+    //     vm.assertNotEq(left, right);
+    // }
+
+    // function assertNotEq(sint256 left, sint256 right, string memory err) internal pure virtual {
+    //     vm.assertNotEq(left, right, err);
+    // }
+
+    // function assertNotEqDecimal(sint256 left, sint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertNotEqDecimal(left, right, decimals);
+    // }
+
+    // function assertNotEqDecimal(sint256 left, sint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertNotEqDecimal(left, right, decimals, err);
+    // }
+
+    // function assertNotEq(saddress left, saddress right) internal pure virtual {
+    //     vm.assertNotEq(left, right);
+    // }
+
+    // function assertNotEq(saddress left, saddress right, string memory err) internal pure virtual {
+    //     vm.assertNotEq(left, right, err);
+    // }
 
     function assertNotEq(bytes32 left, bytes32 right) internal pure virtual {
         vm.assertNotEq(left, right);
@@ -377,6 +481,38 @@ abstract contract StdAssertions {
         vm.assertLtDecimal(left, right, decimals, err);
     }
 
+    // function assertLt(suint256 left, suint256 right) internal pure virtual {
+    //     vm.assertLt(left, right);
+    // }
+
+    // function assertLt(suint256 left, suint256 right, string memory err) internal pure virtual {
+    //     vm.assertLt(left, right, err);
+    // }
+
+    // function assertLtDecimal(suint256 left, suint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertLtDecimal(left, right, decimals);
+    // }
+
+    // function assertLtDecimal(suint256 left, suint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertLtDecimal(left, right, decimals, err);
+    // }
+
+    // function assertLt(sint256 left, sint256 right) internal pure virtual {
+    //     vm.assertLt(left, right);
+    // }
+
+    // function assertLt(sint256 left, sint256 right, string memory err) internal pure virtual {
+    //     vm.assertLt(left, right, err);
+    // }
+
+    // function assertLtDecimal(sint256 left, sint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertLtDecimal(left, right, decimals);
+    // }
+
+    // function assertLtDecimal(sint256 left, sint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertLtDecimal(left, right, decimals, err);
+    // }
+
     function assertGt(uint256 left, uint256 right) internal pure virtual {
         vm.assertGt(left, right);
     }
@@ -408,6 +544,38 @@ abstract contract StdAssertions {
     function assertGtDecimal(int256 left, int256 right, uint256 decimals, string memory err) internal pure virtual {
         vm.assertGtDecimal(left, right, decimals, err);
     }
+
+    // function assertGt(suint256 left, suint256 right) internal pure virtual {
+    //     vm.assertGt(left, right);
+    // }
+
+    // function assertGt(suint256 left, suint256 right, string memory err) internal pure virtual {
+    //     vm.assertGt(left, right, err);
+    // }
+
+    // function assertGtDecimal(suint256 left, suint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertGtDecimal(left, right, decimals);
+    // }
+
+    // function assertGtDecimal(suint256 left, suint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertGtDecimal(left, right, decimals, err);
+    // }
+
+    // function assertGt(sint256 left, sint256 right) internal pure virtual {
+    //     vm.assertGt(left, right);
+    // }
+
+    // function assertGt(sint256 left, sint256 right, string memory err) internal pure virtual {
+    //     vm.assertGt(left, right, err);
+    // }
+
+    // function assertGtDecimal(sint256 left, sint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertGtDecimal(left, right, decimals);
+    // }
+
+    // function assertGtDecimal(sint256 left, sint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertGtDecimal(left, right, decimals, err);
+    // }
 
     function assertLe(uint256 left, uint256 right) internal pure virtual {
         vm.assertLe(left, right);
@@ -441,6 +609,38 @@ abstract contract StdAssertions {
         vm.assertLeDecimal(left, right, decimals, err);
     }
 
+    // function assertLe(suint256 left, suint256 right) internal pure virtual {
+    //     vm.assertLe(left, right);
+    // }
+
+    // function assertLe(suint256 left, suint256 right, string memory err) internal pure virtual {
+    //     vm.assertLe(left, right, err);
+    // }
+
+    // function assertLeDecimal(suint256 left, suint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertLeDecimal(left, right, decimals);
+    // }
+
+    // function assertLeDecimal(suint256 left, suint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertLeDecimal(left, right, decimals, err);
+    // }
+
+    // function assertLe(sint256 left, sint256 right) internal pure virtual {
+    //     vm.assertLe(left, right);
+    // }
+
+    // function assertLe(sint256 left, sint256 right, string memory err) internal pure virtual {
+    //     vm.assertLe(left, right, err);
+    // }
+
+    // function assertLeDecimal(sint256 left, sint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertLeDecimal(left, right, decimals);
+    // }
+
+    // function assertLeDecimal(sint256 left, sint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertLeDecimal(left, right, decimals, err);
+    // }
+
     function assertGe(uint256 left, uint256 right) internal pure virtual {
         vm.assertGe(left, right);
     }
@@ -472,6 +672,38 @@ abstract contract StdAssertions {
     function assertGeDecimal(int256 left, int256 right, uint256 decimals, string memory err) internal pure virtual {
         vm.assertGeDecimal(left, right, decimals, err);
     }
+
+    // function assertGe(suint256 left, suint256 right) internal pure virtual {
+    //     vm.assertGe(left, right);
+    // }
+
+    // function assertGe(suint256 left, suint256 right, string memory err) internal pure virtual {
+    //     vm.assertGe(left, right, err);
+    // }
+
+    // function assertGeDecimal(suint256 left, suint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertGeDecimal(left, right, decimals);
+    // }
+
+    // function assertGeDecimal(suint256 left, suint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertGeDecimal(left, right, decimals, err);
+    // }
+
+    // function assertGe(sint256 left, sint256 right) internal pure virtual {
+    //     vm.assertGe(left, right);
+    // }
+
+    // function assertGe(sint256 left, sint256 right, string memory err) internal pure virtual {
+    //     vm.assertGe(left, right, err);
+    // }
+
+    // function assertGeDecimal(sint256 left, sint256 right, uint256 decimals) internal pure virtual {
+    //     vm.assertGeDecimal(left, right, decimals);
+    // }
+
+    // function assertGeDecimal(sint256 left, sint256 right, uint256 decimals, string memory err) internal pure virtual {
+    //     vm.assertGeDecimal(left, right, decimals, err);
+    // }
 
     function assertApproxEqAbs(uint256 left, uint256 right, uint256 maxDelta) internal pure virtual {
         vm.assertApproxEqAbs(left, right, maxDelta);
@@ -526,6 +758,60 @@ abstract contract StdAssertions {
     {
         vm.assertApproxEqAbsDecimal(left, right, maxDelta, decimals, err);
     }
+
+    // function assertApproxEqAbs(suint256 left, suint256 right, uint256 maxDelta) internal pure virtual {
+    //     vm.assertApproxEqAbs(left, right, maxDelta);
+    // }
+
+    // function assertApproxEqAbs(suint256 left, suint256 right, uint256 maxDelta, string memory err)
+    //     internal
+    //     pure
+    //     virtual
+    // {
+    //     vm.assertApproxEqAbs(left, right, maxDelta, err);
+    // }
+
+    // function assertApproxEqAbsDecimal(suint256 left, suint256 right, uint256 maxDelta, uint256 decimals)
+    //     internal
+    //     pure
+    //     virtual
+    // {
+    //     vm.assertApproxEqAbsDecimal(left, right, maxDelta, decimals);
+    // }
+
+    // function assertApproxEqAbsDecimal(
+    //     suint256 left,
+    //     suint256 right,
+    //     uint256 maxDelta,
+    //     uint256 decimals,
+    //     string memory err
+    // ) internal pure virtual {
+    //     vm.assertApproxEqAbsDecimal(left, right, maxDelta, decimals, err);
+    // }
+
+    // function assertApproxEqAbs(sint256 left, sint256 right, uint256 maxDelta) internal pure virtual {
+    //     vm.assertApproxEqAbs(left, right, maxDelta);
+    // }
+
+    // function assertApproxEqAbs(sint256 left, sint256 right, uint256 maxDelta, string memory err) internal pure virtual {
+    //     vm.assertApproxEqAbs(left, right, maxDelta, err);
+    // }
+
+    // function assertApproxEqAbsDecimal(sint256 left, sint256 right, uint256 maxDelta, uint256 decimals)
+    //     internal
+    //     pure
+    //     virtual
+    // {
+    //     vm.assertApproxEqAbsDecimal(left, right, maxDelta, decimals);
+    // }
+
+    // function assertApproxEqAbsDecimal(sint256 left, sint256 right, uint256 maxDelta, uint256 decimals, string memory err)
+    //     internal
+    //     pure
+    //     virtual
+    // {
+    //     vm.assertApproxEqAbsDecimal(left, right, maxDelta, decimals, err);
+    // }
 
     function assertApproxEqRel(
         uint256 left,
@@ -594,6 +880,74 @@ abstract contract StdAssertions {
     ) internal pure virtual {
         vm.assertApproxEqRelDecimal(left, right, maxPercentDelta, decimals, err);
     }
+
+    // function assertApproxEqRel(
+    //     suint256 left,
+    //     suint256 right,
+    //     uint256 maxPercentDelta // An 18 decimal fixed point number, where 1e18 == 100%
+    // ) internal pure virtual {
+    //     vm.assertApproxEqRel(left, right, maxPercentDelta);
+    // }
+
+    // function assertApproxEqRel(
+    //     suint256 left,
+    //     suint256 right,
+    //     uint256 maxPercentDelta, // An 18 decimal fixed point number, where 1e18 == 100%
+    //     string memory err
+    // ) internal pure virtual {
+    //     vm.assertApproxEqRel(left, right, maxPercentDelta, err);
+    // }
+
+    // function assertApproxEqRelDecimal(
+    //     suint256 left,
+    //     suint256 right,
+    //     uint256 maxPercentDelta, // An 18 decimal fixed point number, where 1e18 == 100%
+    //     uint256 decimals
+    // ) internal pure virtual {
+    //     vm.assertApproxEqRelDecimal(left, right, maxPercentDelta, decimals);
+    // }
+
+    // function assertApproxEqRelDecimal(
+    //     suint256 left,
+    //     suint256 right,
+    //     uint256 maxPercentDelta, // An 18 decimal fixed point number, where 1e18 == 100%
+    //     uint256 decimals,
+    //     string memory err
+    // ) internal pure virtual {
+    //     vm.assertApproxEqRelDecimal(left, right, maxPercentDelta, decimals, err);
+    // }
+
+    // function assertApproxEqRel(int256 left, int256 right, uint256 maxPercentDelta) internal pure virtual {
+    //     vm.assertApproxEqRel(left, right, maxPercentDelta);
+    // }
+
+    // function assertApproxEqRel(
+    //     sint256 left,
+    //     sint256 right,
+    //     uint256 maxPercentDelta, // An 18 decimal fixed point number, where 1e18 == 100%
+    //     string memory err
+    // ) internal pure virtual {
+    //     vm.assertApproxEqRel(left, right, maxPercentDelta, err);
+    // }
+
+    // function assertApproxEqRelDecimal(
+    //     sint256 left,
+    //     sint256 right,
+    //     uint256 maxPercentDelta, // An 18 decimal fixed point number, where 1e18 == 100%
+    //     uint256 decimals
+    // ) internal pure virtual {
+    //     vm.assertApproxEqRelDecimal(left, right, maxPercentDelta, decimals);
+    // }
+
+    // function assertApproxEqRelDecimal(
+    //     sint256 left,
+    //     sint256 right,
+    //     uint256 maxPercentDelta, // An 18 decimal fixed point number, where 1e18 == 100%
+    //     uint256 decimals,
+    //     string memory err
+    // ) internal pure virtual {
+    //     vm.assertApproxEqRelDecimal(left, right, maxPercentDelta, decimals, err);
+    // }
 
     // Inherited from DSTest, not used but kept for backwards-compatibility
     function checkEq0(bytes memory left, bytes memory right) internal pure returns (bool) {

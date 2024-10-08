@@ -51,9 +51,9 @@ library console2 {
         _sendLogPayload(abi.encodeWithSignature("log(sint256)", p0));
     }
 
-    // function logSaddress(saddress p0) internal pure {
-    //     _sendLogPayload(abi.encodeWithSignature("log(saddress)", p0));
-    // }
+    function logSaddress(saddress p0) internal pure {
+        _sendLogPayload(abi.encodeWithSignature("log(saddress)", p0));
+    }
 
     function logString(string memory p0) internal pure {
         _sendLogPayload(abi.encodeWithSignature("log(string)", p0));
